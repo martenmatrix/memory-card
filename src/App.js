@@ -25,44 +25,24 @@ function CardSection(props) {
         setShuffledCards(shuffledCards);
     }
 
-    function updateCurrentScore(hasLost) {
-        setScore(prevScore => ({
-            ...prevScore,
-            current: prevScore.current + 1,
-        }));
-
-        if (hasLost) {
-            setScore(prevScore => ({
-                    ...prevScore,
-                    current: 0,
-            }));
-        }
-    }
-
-    function updateBestScore() {
-        setScore(prevScore => {
-            const currentScore = prevScore.current;
-            if (prevScore.best < currentScore) {
-                return {
-                    ...prevScore,
-                    best: currentScore,
-                }
-            }
-            return prevScore;
-        });
-    }
-
     function handleSelection(event) {
         shuffleCards();
         const cardName = event.currentTarget.dataset.name;
         const cardIndex = usedCards.indexOf(cardName);
         const hasLost = cardIndex !== -1;
-        updateBestScore();
-        updateCurrentScore(hasLost);
         if (hasLost) {
             setUsedCards([]);
+            setScore(prevScore => ({
+                current: 0,
+                best: Math.max(prevScore.best, prevScore.current),  
+            }));
         } else {
             setUsedCards(prevState => prevState.concat(cardName));
+            setScore(prevScore => ({
+                ...prevScore,
+                current: prevScore.current + 1,
+                best: Math.max(prevScore.best, prevScore.current + 1),  
+            }));
         }
     }
 
