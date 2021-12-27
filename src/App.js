@@ -66,8 +66,10 @@ function Scoreboard(props) {
     return (
         <div className="scoreboard">
             <h1>Scoreboard</h1>
-            <h2>Highest Score: {best}</h2>
-            <h2>Current Score: {score}</h2>
+            <div className="score">
+                <h2>Highest Score: {best}</h2>
+                <h2>Current Score: {score}</h2>
+            </div>
         </div>
     )
 }

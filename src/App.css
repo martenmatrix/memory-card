@@ -44,3 +44,27 @@
 .card h2 {
   font-size: 1rem;
 }
+
+header {
+  display: flex;
+  margin: 1rem;
+  justify-content: space-between;
+}
+
+.scoreboard {
+  border: 1px solid black;
+  height: min-content;
+}
+
+.scoreboard h1 {
+  font-size: 1rem;
+  margin: 0 auto;
+  margin-top: -0.5rem;
+  width: min-content;
+  background: white;
+}
+
+.scoreboard h2 {
+  font-size: 0.7rem;
+  margin: 0 1rem;
+}
