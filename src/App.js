@@ -18,7 +18,7 @@ function Card(props) {
 function CardSection(props) {
     const [shuffledCards, setShuffledCards] = useState([]);
     const [usedCards, setUsedCards] = useState([]);
-    const [score, setScore] = props.scoreState;
+    const setScore = props.setScore;
 
     function shuffleCards() {
         const shuffledCards = cards.sort(() => Math.random() - 0.5);
@@ -86,7 +86,7 @@ function App() {
             <h1>Memory Game</h1>
             <Scoreboard score={score}/>
           </header>
-          <CardSection scoreState={[score, setScore]}/>
+          <CardSection setScore={setScore}/>
       </div>
     );
 }

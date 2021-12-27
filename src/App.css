@@ -10,3 +10,37 @@
     transform: rotate(360deg);
   }
 }
+
+.card-section {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+
+  height: 20rem;
+  width: 10rem;
+
+  border: black solid 0.2rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+}
+
+.card img {
+  object-fit: cover;
+  margin: 1rem auto;
+  width: 8rem;
+  height: 8rem;
+  border: black solid 0.2rem;
+  border-radius: 0.5em;
+}
+
+.card h2 {
+  font-size: 1rem;
+}
