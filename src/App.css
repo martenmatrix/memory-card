@@ -30,6 +30,7 @@
 
   border: black solid 0.2rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+  transition: background-color 0.2s ease-in-out;
 }
 
 .card img {
@@ -39,6 +40,17 @@
   height: 8rem;
   border: black solid 0.2rem;
   border-radius: 0.5em;
+
+  transition: border-color 0.2s ease-in-out;
+}
+
+.card:hover {
+  border-color: white;
+  background: black;
+}
+
+.card:hover img {
+  border-color: white;
 }
 
 .card h2 {
