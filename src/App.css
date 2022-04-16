@@ -49,6 +49,10 @@
   background: black;
 }
 
+.card:hover h2 {
+  color: white;
+}
+
 .card:hover img {
   border-color: white;
 }
