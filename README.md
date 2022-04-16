@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Memory Card
+This application puts your memory to the test. You are presented with multiple images of characters from the TV series Mr. Robot. The images get shuffled every-time they are clicked. You are not allowed to click on any image more than once or else your score resets to zero. The main objective is to get the highest score as possible.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+- [Deployed links](#globe_with_meridians-deployed-links)
+- [Usage](#grey_exclamation-usage)
+- [Features](#sparkles-features)
+- [Installation](#wrench-installation)
+- [Technology stack](#blue_book-technology-stack)
+- [License](#scroll-license)
 
-## Available Scripts
+## :globe_with_meridians: Deployed links
+The application is hosted at the following address:
 
-In the project directory, you can run:
+- https://martenmatrix.github.io/memory-card/
 
-### `npm start`
+## :grey_exclamation: Usage
+1. Click a card to start the game.
+2. Try to click on any image not more than once.
+3. For each clicked image, which you haven't clicked before, the score will increase by one.
+4. Your current score and the high score will be displayed in the top right corner.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+If something does not work as expected, please [create an issue](https://github.com/martenmatrix/memory-card/issues/new).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## :sparkles: Features
+- displays the high score
+- displays the current score
+- shuffles cards after clicking one
 
-### `npm test`
+##  :wrench: Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+If you want to run the application on your local pc or just want to contribute, do the following steps:
 
-### `npm run build`
+1. Clone the repository.
+	`git clone https://github.com/martenmatrix/memory-card`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install the dependencies.
+	`npm install`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. If you want to run the website on your localhost type: 
+	`npm run start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. If you want to build the site for production. Run `npm run build`. A folder called “build” should get created.
 
-### `npm run eject`
+## :blue_book: Technology Stack
+- **Create React App** v5.0.0
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## :scroll: License
+[MIT](https://github.com/martenmatrix/memory-card/blob/main/LICENSE)
